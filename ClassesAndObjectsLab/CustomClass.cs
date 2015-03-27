@@ -13,7 +13,7 @@ public class Student
 {
     private int points;
     private string name;
-    private Rank currentRank = Rank.Grasshopper;
+    private Rank currentRank = Rank.Grasshopper; 
 
     public Student(string name) 
     {
@@ -45,23 +45,24 @@ public class Student
         {
             currentRank = Rank.Journeyman;
         }
-        else if (this.points > 10 && this.points < 15) 
+        else if (this.points >= 10 && this.points < 15) 
         {
             currentRank = Rank.Rockstar;
         }
-        else if (this.points > 15 && this.points < 20) 
+        else if (this.points >= 15 && this.points <= 20) 
         {
             currentRank = Rank.Ninja;
         }
-        else if (this.points > 25 && this.points < 30) 
+        else if (this.points >= 20 && this.points < 30) 
         {
             currentRank = Rank.Jedi;
         }
         return currentRank;
     }
 
-    public string ToString() 
+    public string printDetails() 
     {
-        return this.name + " " + this.points + " " + this.currentRank; 
+        return "Name: " + this.name + "\r\n" + "Points: " 
+            + this.points + "\r\n" + "Rank: " + this.currentRank + "\r\n";
     }
 }

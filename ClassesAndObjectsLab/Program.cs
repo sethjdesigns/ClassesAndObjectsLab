@@ -13,8 +13,10 @@ namespace ClassesAndObjectsLab
         {
 
             Student newStudent = new Student("Seth");
+            Console.WriteLine(newStudent.printDetails());
 
-            Console.WriteLine(newStudent.ToString());
+            Student newStudent2 = new Student("Lauren");
+            Console.WriteLine(newStudent2.printDetails());
 
             Console.ReadLine();
         }
