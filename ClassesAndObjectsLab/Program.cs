@@ -13,14 +13,7 @@ namespace ClassesAndObjectsLab
         {
 
             Student newStudent = new Student("Seth");
-            newStudent.HelpedStudent();
-            newStudent.HelpedStudent();
             Console.WriteLine(newStudent.printDetails());
-
-            Student newStudent2 = new Student("Lauren");
-            Console.WriteLine(newStudent2.printDetails());
-
-            Console.ReadLine();
         }
     }
 }
