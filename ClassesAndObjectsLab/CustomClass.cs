@@ -35,7 +35,7 @@ public class Student
         return points;
     }
 
-    public void RankCheck() 
+    public Rank RankCheck() 
     {
         if (this.points < 5) 
         {
@@ -57,5 +57,11 @@ public class Student
         {
             currentRank = Rank.Jedi;
         }
+        return currentRank;
+    }
+
+    public string ToString() 
+    {
+        return this.name + " " + this.points + " " + this.currentRank; 
     }
 }
