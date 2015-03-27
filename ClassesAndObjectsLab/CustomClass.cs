@@ -35,7 +35,7 @@ public class Student
         return points;
     }
 
-    public Rank RankCheck() 
+    private Rank RankCheck() 
     {
         if (this.points < 5) 
         {
@@ -60,7 +60,7 @@ public class Student
         return currentRank;
     }
 
-    public string printDetails() 
+    public override string ToString() 
     {
         return "Name: " + this.name + "\r\n" + "Points: " 
             + this.points + "\r\n" + "Rank: " + this.currentRank + "\r\n";
