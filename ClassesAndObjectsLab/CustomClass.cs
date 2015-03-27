@@ -49,11 +49,11 @@ public class Student
         {
             currentRank = Rank.Rockstar;
         }
-        else if (this.points >= 15 && this.points <= 20) 
+        else if (this.points >= 15 && this.points < 20) 
         {
             currentRank = Rank.Ninja;
         }
-        else if (this.points >= 20 && this.points < 30) 
+        else if (this.points >= 20) 
         {
             currentRank = Rank.Jedi;
         }
