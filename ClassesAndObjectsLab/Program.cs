@@ -7,13 +7,19 @@ using System.Threading.Tasks;
 namespace ClassesAndObjectsLab
 {   
     class Program
-    {
-
+    { 
         static void Main()
-        {
+        {   
+            List<Student> allStudents = new List<Student>();
 
-            Student newStudent = new Student("Seth");
-            Console.WriteLine(newStudent.printDetails());
+            for (int i = 0; i < 10; i++)
+            {
+
+                Student student = new Student(string.Format("John Doe {0}", i));
+                allStudents.Add(student);
+
+                Console.WriteLine(student);
+            }
         }
     }
 }

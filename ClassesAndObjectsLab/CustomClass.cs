@@ -21,16 +21,18 @@ public class Student
         this.name = name;
     }
 
-    public int FinishedProgram()
+    public int FinishedProgram(int programs)
     {
         points += 1;
+        points *= programs;
         RankCheck();
         return points;
     }
 
-    public int HelpedStudent()
+    public int HelpedStudent(int studentsHelped)
     {
         points += 10;
+        points *= studentsHelped;
         RankCheck();
         return points;
     }
