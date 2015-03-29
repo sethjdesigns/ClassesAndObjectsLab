@@ -25,5 +25,20 @@ namespace ClassesAndObjectsTests
             Assert.Equal(1, testFinishProg);
         }
 
+        [Fact]
+
+        //Test if helping a student adds exactly ten points.
+        public void TestHelpedStudent()
+        {
+            //arrage:
+            var newStudent = new Student("Seth");
+
+            //act:
+            var testHelpedStudent = newStudent.HelpedStudent(1);
+
+            //assert:
+            Assert.Equal(10, testHelpedStudent);
+        }
+
     }
 }
