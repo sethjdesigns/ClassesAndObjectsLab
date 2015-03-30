@@ -20,6 +20,7 @@ namespace ClassesAndObjectsLab
 
                 Console.WriteLine(student);
             }
+
         }
     }
 }

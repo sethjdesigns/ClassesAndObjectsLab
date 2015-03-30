@@ -9,7 +9,6 @@ namespace ClassesAndObjectsTests
 {
     public class TestStudent
     {
-
         [Fact]
 
         //Test if finishing the program adds exactly one point.
@@ -39,6 +38,5 @@ namespace ClassesAndObjectsTests
             //assert:
             Assert.Equal(10, testHelpedStudent);
         }
-
     }
 }

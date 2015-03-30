@@ -37,7 +37,7 @@ public class Student
         return points;
     }
 
-    private Rank RankCheck() 
+    public Rank RankCheck() 
     {
         if (this.points < 5) 
         {
